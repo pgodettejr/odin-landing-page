@@ -36,6 +36,34 @@ ul {
   list-style-type: none;
 }
 
+.media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: #1F2937;
+}
+
+.media .content {
+  flex: 1;
+  /* padding: 0; */
+  color: #F9FAF8
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: extra-bold;
+}
+
+.image img {
+  max-width: 300px;
+}
+
+.button {
+  background-color: #3882F6;
+  /* color: #3882F6; */
+}
+
 .footer {
   display: flex;
   position: relative;
