@@ -49,14 +49,17 @@ ul {
 
 .content {
   flex: 1;
+  /* margin: 20px 497px; */
   /* justify-content: center; */
-  margin-left: 500px;
+  /*width: 100px; */
+  margin-top: 20px;
+  margin-left: 497px;
   /* padding: 0; */
   color: #F9FAF8
 }
 
 /* This was a descendant combinator of .media .content & also a group selector with the same selectors. REALLY don't want to margin longhand here even though 
-it technically "works" */
+it technically "works". Tried width to shorten text but didn't work. */
 
 h1 {
   font-size: 48px;
@@ -68,8 +71,12 @@ h1 {
 }
 
 .image img {
+  /* max-height: 250px; */
   max-width: 500px;
+  margin: 40px;
 }
+
+/* Thought max-height would squish the image. It doesn't (makes the whole image smaller) */
 
 .signup-1 {
   padding: 8px 24px;
@@ -81,7 +88,7 @@ h1 {
   font-weight: 700;
 }
 
-/* Decide between 24 and 28px for the padding */
+/* Decide between 24 and 28px for the padding. Will need this entire selector for the second button, but border will need to be white. Will need border-radius for the images in the next section */
 
 .footer {
   display: flex;
