@@ -39,30 +39,49 @@ ul {
 .media {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
+  margin: 0;
+  padding: 0;
+  gap: 16px;
   flex-direction: row-reverse;
   background: #1F2937;
 }
 
-.media .content {
+.content {
   flex: 1;
+  /* justify-content: center; */
+  margin-left: 500px;
   /* padding: 0; */
   color: #F9FAF8
 }
+
+/* This was a descendant combinator of .media .content & also a group selector with the same selectors. REALLY don't want to margin longhand here even though 
+it technically "works" */
 
 h1 {
   font-size: 48px;
   font-weight: extra-bold;
 }
 
-.image img {
-  max-width: 300px;
+.image {
+  flex: 1;
 }
 
-.button {
-  background-color: #3882F6;
-  /* color: #3882F6; */
+.image img {
+  max-width: 500px;
 }
+
+.signup-1 {
+  padding: 8px 24px;
+  border-radius: 8px;
+  margin-top: 16px;
+  background: #3882F6;
+  border: 1px solid #3882F6;
+  color: #EEE;
+  font-weight: 700;
+}
+
+/* Decide between 24 and 28px for the padding */
 
 .footer {
   display: flex;
