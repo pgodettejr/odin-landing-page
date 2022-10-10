@@ -93,20 +93,24 @@ width and height than the other 4 images in CSS (inline CSS on the HTML element 
 
 /* Decide between 24 and 28px for the padding. Will need this entire selector for the second button, but border will need to be white. */
 
+.header-2 {
+  align-items: center;
+  text-align: center;
+}
+
 h2 {
   font-size: 36px;
   font-weight: extra-bold;
   color: #1F2937;
-  text-align: center;
-  margin: 0 50px;
+  margin: 0;
+  padding: 32px;
 }
-
-/* Text not centered. Need to get it there somehow. Look at first CSS header assignment & view logo? */
 
 .info {
   display: flex;
-  justify-content: space-evenly;
-  gap: 52px;
+  justify-content: center;
+  text-align: center;
+  gap: 64px;
 }
 
 img {
@@ -116,9 +120,10 @@ img {
   /* margin-top: 50px; */
 }
 
+/* Potentially add another class to the HTML for each image and change this selector to that new class in order to separate these images from the top image */
+
 .subtext {
   max-width: 200px;
-  text-align: center;
 }
 
 .footer {
