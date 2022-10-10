@@ -68,15 +68,18 @@ h1 {
 
 .image {
   flex: 1;
-}
-
-.image img {
-  /* max-height: 250px; */
   max-width: 500px;
   margin: 40px;
 }
 
-/* Thought max-height would squish the image. It doesn't (makes the whole image smaller) */
+/* .image img {
+  max-height: 250px;
+  max-width: 500px;
+  margin: 40px;
+} */
+
+/* Thought max-height would squish the image. It doesn't (makes the whole image smaller). Need to figure out how to target this specific image with a different 
+width and height than the other 4 images in CSS (inline CSS on the HTML element itself?) */
 
 .signup-1 {
   padding: 8px 24px;
@@ -88,7 +91,35 @@ h1 {
   font-weight: 700;
 }
 
-/* Decide between 24 and 28px for the padding. Will need this entire selector for the second button, but border will need to be white. Will need border-radius for the images in the next section */
+/* Decide between 24 and 28px for the padding. Will need this entire selector for the second button, but border will need to be white. */
+
+h2 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1F2937;
+  text-align: center;
+  margin: 0 50px;
+}
+
+/* Text not centered. Need to get it there somehow. Look at first CSS header assignment & view logo? */
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 52px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  /* margin-top: 50px; */
+}
+
+.subtext {
+  max-width: 200px;
+  text-align: center;
+}
 
 .footer {
   display: flex;
