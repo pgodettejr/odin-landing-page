@@ -122,7 +122,8 @@ img {
   /* margin-top: 50px; */
 }
 
-/* Potentially add another class to the HTML for each image and change this selector to that new class in order to separate these images from the top image */
+/* If inline CSS above doesn't work, add another class to the HTML for each image and change this selector to that new class in order to separate these images from 
+the top image */
 
 .subtext {
   max-width: 200px;
