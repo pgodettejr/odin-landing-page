@@ -51,9 +51,8 @@ ul {
   flex: 1;
   /* margin: 20px 497px; */
   /* justify-content: center; */
-  /*width: 100px; */
-  margin-top: 20px;
-  margin-left: 450px;
+  max-width: 650px;
+  margin: 20px 0 72px 160px;
   /* padding: 0; */
   color: #F9FAF8
 }
@@ -63,7 +62,7 @@ it technically "works". Tried width to shorten text but didn't work. */
 
 h1 {
   font-size: 48px;
-  font-weight: extra-bold;
+  font-weight: 800;
 }
 
 .image {
@@ -96,11 +95,12 @@ width and height than the other 4 images in CSS (inline CSS on the HTML element 
 .header-2 {
   align-items: center;
   text-align: center;
+  margin-top: 18px;
 }
 
 h2 {
   font-size: 36px;
-  font-weight: extra-bold;
+  font-weight: 800;
   color: #1F2937;
   margin: 0;
   padding: 32px;
@@ -110,6 +110,8 @@ h2 {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 120px;
   gap: 64px;
 }
 
@@ -125,6 +127,34 @@ img {
 .subtext {
   max-width: 200px;
 }
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e7eb;
+  text-align: center;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: 100;
+  color: #1F2937;
+  margin: 64px;
+  padding: 64px;
+  max-width: 900px;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1F2937;
+}
+
+/* Thor needs to be on bottom right of the text. Could make it it's own separate div with same format as testimonial & force it to flex-end but that's kinda ghetto */
 
 .footer {
   display: flex;
