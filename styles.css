@@ -9,7 +9,6 @@ body {
 .header {
   display: flex;
   justify-content: space-around;
-  /* Not sure if this should be space-around or space-between with some type of margin. Revisit once the main content gets added */
   margin: 0;
   padding: 0;
   gap: 16px;
@@ -39,7 +38,6 @@ ul {
 .media {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   margin: 0;
   padding: 0;
   gap: 16px;
@@ -78,7 +76,10 @@ h1 {
 } */
 
 /* Thought max-height would squish the image. It doesn't (makes the whole image smaller). Need to figure out how to target this specific image with a different 
-width and height than the other 4 images in CSS (inline CSS on the HTML element itself?) */
+width and height than the other 4 images in CSS. Tried targeting the image specifically with inline CSS. Tried adding a div class to the other 4 images in the next 
+section in the HTML and change the selector to the new div class in CSS. Neither worked (images go full resolution and take up most of the webpage in the background)
+
+yeah idk ¯\_(ツ)_/¯ */
 
 .signup-1 {
   padding: 8px 24px;
@@ -89,8 +90,6 @@ width and height than the other 4 images in CSS (inline CSS on the HTML element 
   color: #EEE;
   font-weight: 700;
 }
-
-/* Decide between 24 and 28px for the padding. Will need this entire selector for the second button, but border will need to be white. */
 
 .header-2 {
   align-items: center;
@@ -121,9 +120,6 @@ img {
   border-radius: 10px;
   /* margin-top: 50px; */
 }
-
-/* If inline CSS above doesn't work, add another class to the HTML for each image and change this selector to that new class in order to separate these images from 
-the top image */
 
 .subtext {
   max-width: 200px;
@@ -159,7 +155,6 @@ the top image */
 .container {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   margin: 16px;
   padding: 16px;
 }
