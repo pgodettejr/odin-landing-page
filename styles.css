@@ -153,9 +153,47 @@ the top image */
   font-size: 24px;
   font-weight: 800;
   color: #1F2937;
+  margin-top: 48px;
 }
 
-/* Thor needs to be on bottom right of the text. Could make it it's own separate div with same format as testimonial & force it to flex-end but that's kinda ghetto */
+.container {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  margin: 16px;
+  padding: 16px;
+}
+
+.cta {
+  padding: 8px 300px;
+  border-radius: 8px;
+  margin: 80px 48px;
+  background: #3882F6;
+  border: 1px solid #3882F6;
+  color: #EEE;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+
+}
+/* May need to style this in CSS the same way "media" class above is done once the HTML is organized the same way */
+
+.signup-2 {
+  padding: 8px 24px;
+  border-radius: 8px;
+  margin-top: 16px;
+  background: #3882F6;
+  border: 2px solid #EEE;
+  color: #EEE;
+  font-weight: 700;
+}
 
 .footer {
   display: flex;
