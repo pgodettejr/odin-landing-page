@@ -37,26 +37,20 @@ ul {
 
 .media {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  gap: 16px;
+  gap: 350px;
   flex-direction: row-reverse;
   background: #1F2937;
 }
 
 .content {
   flex: 1;
-  /* margin: 20px 497px; */
-  /* justify-content: center; */
   max-width: 650px;
-  margin: 20px 0 72px 160px;
-  /* padding: 0; */
+  margin: 20px 0 72px 0;
   color: #F9FAF8
 }
-
-/* This was a descendant combinator of .media .content & also a group selector with the same selectors. REALLY don't want to margin longhand here even though 
-it technically "works". Tried width to shorten text but didn't work. */
 
 h1 {
   font-size: 48px;
@@ -66,20 +60,15 @@ h1 {
 .image {
   flex: 1;
   max-width: 500px;
-  margin: 40px;
+  margin: 40px 80px 40px;
 }
 
-/* .image img {
-  max-height: 250px;
-  max-width: 500px;
-  margin: 40px;
-} */
-
-/* Thought max-height would squish the image. It doesn't (makes the whole image smaller). Need to figure out how to target this specific image with a different 
-width and height than the other 4 images in CSS. Tried targeting the image specifically with inline CSS. Tried adding a div class to the other 4 images in the next 
-section in the HTML and change the selector to the new div class in CSS. Neither worked (images go full resolution and take up most of the webpage in the background)
-
-yeah idk ¯\_(ツ)_/¯ */
+.image img {
+  height: 300px;
+  width: 650px;
+  margin: 20px 0 70px 0;
+  border-radius: 0px;
+}
 
 .signup-1 {
   padding: 8px 24px;
@@ -118,7 +107,6 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  /* margin-top: 50px; */
 }
 
 .subtext {
